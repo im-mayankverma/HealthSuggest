@@ -49,7 +49,7 @@ This is **not a diagnosis tool** and is for informational purposes only.
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/im-mayankverma/healthsuggest.git
+git clone https://github.com/im-mayankverma/HealthSuggest.git
 cd healthsuggest
 ```
 
