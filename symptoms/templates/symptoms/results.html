@@ -1,0 +1,104 @@
+{% extends 'symptoms/base.html' %}
+
+{% block content %}
+<div class="container">
+    <div class="results-header">
+        <h2>Your Health Suggestion</h2>
+        <button class="print-btn" type="button" onclick="window.print()">Print / Save</button>
+    </div>
+
+    <div class="selected-symptoms">
+        <h3>Your Symptoms</h3>
+        <ul>
+            {% for symptom in selected_symptoms %}
+            <li>{{ symptom.name }}</li>
+            {% endfor %}
+        </ul>
+
+        <p class="user-input-summary">
+            Duration:
+            {% if duration_days and duration_days > 0 %}
+                {{ duration_days }} day{% if duration_days > 1 %}s{% endif %}
+            {% else %}
+                not specified
+            {% endif %}
+            | Your severity: {{ user_severity|title }}
+        </p>
+    </div>
+
+    <div class="results">
+        <h3>Most Likely Condition</h3>
+
+        {% if best_result %}
+        <div class="condition-card severity-{% if best_result.condition.severity %}{{ best_result.condition.severity }}{% else %}mild{% endif %}">
+            <div class="condition-header">
+                <div>
+                    <h4>{{ best_result.condition.name }}</h4>
+                    <span class="match-percentage">{{ best_result.match_percentage }}% match</span>
+                </div>
+
+                <div class="risk-wrapper">
+                    {% if risk_level %}
+                    <span class="risk-badge risk-{{ risk_level }}">
+                        {% if risk_level == 'high' %}High risk{% elif risk_level == 'medium' %}Medium risk{% else %}Low risk{% endif %}
+                    </span>
+                    {% endif %}
+                </div>
+            </div>
+
+            <div class="condition-details">
+                <p><strong>Description:</strong> {{ best_result.condition.description }}</p>
+                <p><strong>Severity (medical):</strong> {{ best_result.condition.get_severity_display }}</p>
+                <p><strong>Advice:</strong> {{ best_result.condition.advice }}</p>
+
+                {% if best_result.condition.home_remedies %}
+                <p><strong>Home Remedies:</strong> {{ best_result.condition.home_remedies }}</p>
+                {% endif %}
+
+                <p class="doctor-advice">
+                    <strong>When to See a Doctor:</strong>
+                    {{ best_result.condition.when_to_see_doctor }}
+                </p>
+            </div>
+
+            <div class="next-steps">
+                <h4>Next steps</h4>
+                <ul>
+                    <li>Monitor your symptoms over time and note any changes.</li>
+                    <li>Follow the self-care advice above as appropriate.</li>
+                    <li>If your symptoms worsen or you notice anything worrying, contact a doctor.</li>
+                </ul>
+                <p class="disclaimer-note">
+                    This is not a diagnosis. Only a healthcare professional can give you a medical diagnosis.
+                </p>
+            </div>
+        </div>
+
+        {% if other_results %}
+        <div class="other-conditions">
+            <h3>Other Possible Conditions</h3>
+            <ul>
+                {% for item in other_results %}
+                <li>
+                    <strong>{{ item.condition.name }}</strong>
+                    – {{ item.match_percentage }}% match
+                    (Severity: {{ item.condition.get_severity_display }})
+                </li>
+                {% endfor %}
+            </ul>
+            <p class="other-note">
+                These are less likely based on your current symptoms but may still be possible.
+            </p>
+        </div>
+        {% endif %}
+
+        {% else %}
+        <div class="no-results">
+            <p>No matching condition found for your symptoms. Please consult a doctor if you are concerned.</p>
+        </div>
+        {% endif %}
+    </div>
+
+    <a href="{% url 'home' %}" class="back-btn">Check Other Symptoms</a>
+</div>
+{% endblock %}

@@ -1,0 +1,136 @@
+{% extends 'symptoms/base.html' %}
+
+{% block content %}
+<div class="container">
+    <h2>Select Your Symptoms</h2>
+
+    {% if error %}
+    <div class="error-message">
+        {{ error }}
+    </div>
+    {% endif %}
+
+    <form method="POST" action="{% url 'get_suggestions' %}" id="symptom-form">
+        {% csrf_token %}
+
+        <div class="form-section">
+            <label class="section-label">Selected symptoms:</label>
+            <div id="selected-summary" class="selected-summary empty">
+                <span class="placeholder">No symptoms selected yet.</span>
+            </div>
+        </div>
+
+        <div class="form-section">
+            <div class="section-header">
+                <label class="section-label">Search & select symptoms</label>
+                <span class="section-hint">Scroll or search by name</span>
+            </div>
+
+            <div class="search-box">
+                <input type="text" id="symptom-search" placeholder="Search symptoms..." onkeyup="filterSymptoms()">
+            </div>
+
+            <div class="symptoms-list" id="symptoms-list">
+                {% for symptom in symptoms %}
+                <label class="symptom-item">
+                    <input type="checkbox" name="symptoms" value="{{ symptom.id }}" class="symptom-checkbox">
+                    <span class="symptom-name">{{ symptom.name }}</span>
+                    {% if symptom.body_part %}
+                    <span class="body-part">{{ symptom.body_part }}</span>
+                    {% endif %}
+                </label>
+                {% empty %}
+                <p>No symptoms available. Please add symptoms in admin panel.</p>
+                {% endfor %}
+            </div>
+        </div>
+
+        <div class="form-section">
+            <div class="field-group">
+                <label for="duration_days" class="section-label">How many days have you had these symptoms?</label>
+                <input type="number" id="duration_days" name="duration_days" min="0" placeholder="e.g. 3">
+                <p class="helper-text">If you’re not sure, give your best guess.</p>
+            </div>
+
+            <div class="field-group">
+                <label class="section-label">How severe do your symptoms feel overall?</label>
+                <div class="severity-toggle">
+                    <label class="severity-option">
+                        <input type="radio" name="user_severity" value="mild" checked>
+                        <span>Mild</span>
+                    </label>
+                    <label class="severity-option">
+                        <input type="radio" name="user_severity" value="moderate">
+                        <span>Moderate</span>
+                    </label>
+                    <label class="severity-option">
+                        <input type="radio" name="user_severity" value="severe">
+                        <span>Severe</span>
+                    </label>
+                </div>
+            </div>
+        </div>
+
+        <div class="sticky-submit">
+            <button type="submit" class="submit-btn">Get Suggestions</button>
+        </div>
+    </form>
+</div>
+
+<script>
+function filterSymptoms() {
+    var input = document.getElementById('symptom-search');
+    var filter = input.value.toLowerCase();
+    var symptomsList = document.getElementById('symptoms-list');
+    var symptoms = symptomsList.getElementsByClassName('symptom-item');
+
+    for (var i = 0; i < symptoms.length; i++) {
+        var symptomName = symptoms[i].getElementsByClassName('symptom-name')[0];
+        var textValue = symptomName.textContent || symptomName.innerText;
+        if (textValue.toLowerCase().indexOf(filter) > -1) {
+            symptoms[i].style.display = '';
+        } else {
+            symptoms[i].style.display = 'none';
+        }
+    }
+}
+
+function updateSelectedSummary() {
+    var checkboxes = document.getElementsByClassName('symptom-checkbox');
+    var summary = document.getElementById('selected-summary');
+    summary.innerHTML = '';
+    var anySelected = false;
+
+    for (var i = 0; i < checkboxes.length; i++) {
+        var cb = checkboxes[i];
+        if (cb.checked) {
+            anySelected = true;
+            var label = cb.closest('.symptom-item');
+            var nameEl = label.getElementsByClassName('symptom-name')[0];
+            var chip = document.createElement('span');
+            chip.className = 'symptom-chip';
+            chip.textContent = nameEl.textContent;
+            summary.appendChild(chip);
+        }
+    }
+
+    if (!anySelected) {
+        summary.classList.add('empty');
+        var placeholder = document.createElement('span');
+        placeholder.className = 'placeholder';
+        placeholder.textContent = 'No symptoms selected yet.';
+        summary.appendChild(placeholder);
+    } else {
+        summary.classList.remove('empty');
+    }
+}
+
+document.addEventListener('DOMContentLoaded', function() {
+    var checkboxes = document.getElementsByClassName('symptom-checkbox');
+    for (var i = 0; i < checkboxes.length; i++) {
+        checkboxes[i].addEventListener('change', updateSelectedSummary);
+    }
+    updateSelectedSummary();
+});
+</script>
+{% endblock %}
