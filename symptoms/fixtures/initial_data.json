@@ -1,1251 +1,254 @@
 [
-  {
-    "model": "symptoms.symptom",
-    "pk": 1,
-    "fields": {
-      "name": "Fever",
-      "body_part": "Whole body"
-    }
-  },
-  {
-    "model": "symptoms.symptom",
-    "pk": 2,
-    "fields": {
-      "name": "Cough",
-      "body_part": "Chest"
-    }
-  },
-  {
-    "model": "symptoms.symptom",
-    "pk": 3,
-    "fields": {
-      "name": "Sore throat",
-      "body_part": "Throat"
-    }
-  },
-  {
-    "model": "symptoms.symptom",
-    "pk": 4,
-    "fields": {
-      "name": "Headache",
-      "body_part": "Head"
-    }
-  },
-  {
-    "model": "symptoms.symptom",
-    "pk": 5,
-    "fields": {
-      "name": "Fatigue",
-      "body_part": "Whole body"
-    }
-  },
-  {
-    "model": "symptoms.symptom",
-    "pk": 6,
-    "fields": {
-      "name": "Runny nose",
-      "body_part": "Nose"
-    }
-  },
-  {
-    "model": "symptoms.symptom",
-    "pk": 7,
-    "fields": {
-      "name": "Nasal congestion",
-      "body_part": "Nose"
-    }
-  },
-  {
-    "model": "symptoms.symptom",
-    "pk": 8,
-    "fields": {
-      "name": "Sneezing",
-      "body_part": "Nose"
-    }
-  },
-  {
-    "model": "symptoms.symptom",
-    "pk": 9,
-    "fields": {
-      "name": "Shortness of breath",
-      "body_part": "Chest"
-    }
-  },
-  {
-    "model": "symptoms.symptom",
-    "pk": 10,
-    "fields": {
-      "name": "Chest pain",
-      "body_part": "Chest"
-    }
-  },
-  {
-    "model": "symptoms.symptom",
-    "pk": 11,
-    "fields": {
-      "name": "Wheezing",
-      "body_part": "Chest"
-    }
-  },
-  {
-    "model": "symptoms.symptom",
-    "pk": 12,
-    "fields": {
-      "name": "Nausea",
-      "body_part": "Stomach"
-    }
-  },
-  {
-    "model": "symptoms.symptom",
-    "pk": 13,
-    "fields": {
-      "name": "Vomiting",
-      "body_part": "Stomach"
-    }
-  },
-  {
-    "model": "symptoms.symptom",
-    "pk": 14,
-    "fields": {
-      "name": "Diarrhea",
-      "body_part": "Stomach"
-    }
-  },
-  {
-    "model": "symptoms.symptom",
-    "pk": 15,
-    "fields": {
-      "name": "Abdominal pain",
-      "body_part": "Stomach"
-    }
-  },
-  {
-    "model": "symptoms.symptom",
-    "pk": 16,
-    "fields": {
-      "name": "Loss of appetite",
-      "body_part": "Whole body"
-    }
-  },
-  {
-    "model": "symptoms.symptom",
-    "pk": 17,
-    "fields": {
-      "name": "Muscle aches",
-      "body_part": "Whole body"
-    }
-  },
-  {
-    "model": "symptoms.symptom",
-    "pk": 18,
-    "fields": {
-      "name": "Joint pain",
-      "body_part": "Joints"
-    }
-  },
-  {
-    "model": "symptoms.symptom",
-    "pk": 19,
-    "fields": {
-      "name": "Dizziness",
-      "body_part": "Head"
-    }
-  },
-  {
-    "model": "symptoms.symptom",
-    "pk": 20,
-    "fields": {
-      "name": "Lightheadedness",
-      "body_part": "Head"
-    }
-  },
-  {
-    "model": "symptoms.symptom",
-    "pk": 21,
-    "fields": {
-      "name": "Palpitations",
-      "body_part": "Chest"
-    }
-  },
-  {
-    "model": "symptoms.symptom",
-    "pk": 22,
-    "fields": {
-      "name": "Rash",
-      "body_part": "Skin"
-    }
-  },
-  {
-    "model": "symptoms.symptom",
-    "pk": 23,
-    "fields": {
-      "name": "Itching",
-      "body_part": "Skin"
-    }
-  },
-  {
-    "model": "symptoms.symptom",
-    "pk": 24,
-    "fields": {
-      "name": "Red eyes",
-      "body_part": "Eyes"
-    }
-  },
-  {
-    "model": "symptoms.symptom",
-    "pk": 25,
-    "fields": {
-      "name": "Eye pain",
-      "body_part": "Eyes"
-    }
-  },
-  {
-    "model": "symptoms.symptom",
-    "pk": 26,
-    "fields": {
-      "name": "Photophobia (light sensitivity)",
-      "body_part": "Eyes"
-    }
-  },
-  {
-    "model": "symptoms.symptom",
-    "pk": 27,
-    "fields": {
-      "name": "Ear pain",
-      "body_part": "Ears"
-    }
-  },
-  {
-    "model": "symptoms.symptom",
-    "pk": 28,
-    "fields": {
-      "name": "Hearing loss",
-      "body_part": "Ears"
-    }
-  },
-  {
-    "model": "symptoms.symptom",
-    "pk": 29,
-    "fields": {
-      "name": "Ringing in ears",
-      "body_part": "Ears"
-    }
-  },
-  {
-    "model": "symptoms.symptom",
-    "pk": 30,
-    "fields": {
-      "name": "Back pain",
-      "body_part": "Back"
-    }
-  },
-  {
-    "model": "symptoms.symptom",
-    "pk": 31,
-    "fields": {
-      "name": "Neck pain",
-      "body_part": "Neck"
-    }
-  },
-  {
-    "model": "symptoms.symptom",
-    "pk": 32,
-    "fields": {
-      "name": "Swollen lymph nodes",
-      "body_part": "Neck"
-    }
-  },
-  {
-    "model": "symptoms.symptom",
-    "pk": 33,
-    "fields": {
-      "name": "Chills",
-      "body_part": "Whole body"
-    }
-  },
-  {
-    "model": "symptoms.symptom",
-    "pk": 34,
-    "fields": {
-      "name": "Night sweats",
-      "body_part": "Whole body"
-    }
-  },
-  {
-    "model": "symptoms.symptom",
-    "pk": 35,
-    "fields": {
-      "name": "Unintentional weight loss",
-      "body_part": "Whole body"
-    }
-  },
-  {
-    "model": "symptoms.symptom",
-    "pk": 36,
-    "fields": {
-      "name": "Constipation",
-      "body_part": "Stomach"
-    }
-  },
-  {
-    "model": "symptoms.symptom",
-    "pk": 37,
-    "fields": {
-      "name": "Bloating",
-      "body_part": "Stomach"
-    }
-  },
-  {
-    "model": "symptoms.symptom",
-    "pk": 38,
-    "fields": {
-      "name": "Burning when urinating",
-      "body_part": "Urinary tract"
-    }
-  },
-  {
-    "model": "symptoms.symptom",
-    "pk": 39,
-    "fields": {
-      "name": "Frequent urination",
-      "body_part": "Urinary tract"
-    }
-  },
-  {
-    "model": "symptoms.symptom",
-    "pk": 40,
-    "fields": {
-      "name": "Lower back pain",
-      "body_part": "Back"
-    }
-  },
-  {
-    "model": "symptoms.symptom",
-    "pk": 41,
-    "fields": {
-      "name": "Blood in urine",
-      "body_part": "Urinary tract"
-    }
-  },
-  {
-    "model": "symptoms.symptom",
-    "pk": 42,
-    "fields": {
-      "name": "Difficulty sleeping (insomnia)",
-      "body_part": "Whole body"
-    }
-  },
-  {
-    "model": "symptoms.symptom",
-    "pk": 43,
-    "fields": {
-      "name": "Anxiety",
-      "body_part": "Mind"
-    }
-  },
-  {
-    "model": "symptoms.symptom",
-    "pk": 44,
-    "fields": {
-      "name": "Low mood / sadness",
-      "body_part": "Mind"
-    }
-  },
-  {
-    "model": "symptoms.symptom",
-    "pk": 45,
-    "fields": {
-      "name": "Panic episodes",
-      "body_part": "Mind"
-    }
-  },
-  {
-    "model": "symptoms.condition",
-    "pk": 1,
-    "fields": {
-      "name": "Flu (Influenza)",
-      "description": "A viral infection that attacks your respiratory system (nose, throat, and lungs).",
-      "severity": "moderate",
-      "advice": "Rest, drink plenty of fluids, and use fever-reducing medication if needed.",
-      "home_remedies": "Stay hydrated, use warm fluids, get plenty of rest, and use a humidifier if available.",
-      "when_to_see_doctor": "If symptoms last more than 3 days, if you have difficulty breathing, chest pain, or confusion."
-    }
-  },
-  {
-    "model": "symptoms.condition",
-    "pk": 2,
-    "fields": {
-      "name": "Common cold",
-      "description": "A mild viral infection of the upper respiratory tract (nose and throat).",
-      "severity": "mild",
-      "advice": "Rest and drink fluids. Over-the-counter medicine may help with symptoms.",
-      "home_remedies": "Steam inhalation, warm drinks like soup or tea, and rest.",
-      "when_to_see_doctor": "If symptoms last more than 10 days, if you have high fever, or if symptoms suddenly worsen."
-    }
-  },
-  {
-    "model": "symptoms.condition",
-    "pk": 3,
-    "fields": {
-      "name": "COVID-like viral illness",
-      "description": "A respiratory illness with symptoms that may be similar to COVID-19 or other viral infections.",
-      "severity": "moderate",
-      "advice": "Isolate from others, wear a mask around people, and rest. Seek testing if recommended locally.",
-      "home_remedies": "Hydration, rest, and monitoring for worsening symptoms.",
-      "when_to_see_doctor": "If you have trouble breathing, chest pain, confusion, or bluish lips/face."
-    }
-  },
-  {
-    "model": "symptoms.condition",
-    "pk": 4,
-    "fields": {
-      "name": "Allergic rhinitis (hay fever)",
-      "description": "An allergic reaction that causes sneezing, runny or stuffy nose, and itchy eyes.",
-      "severity": "mild",
-      "advice": "Avoid known triggers, keep windows closed during high pollen days, and consider antihistamines.",
-      "home_remedies": "Saline nasal irrigation, showering after being outdoors, and using air filters.",
-      "when_to_see_doctor": "If symptoms interfere with daily life or do not improve with basic treatment."
-    }
-  },
-  {
-    "model": "symptoms.condition",
-    "pk": 5,
-    "fields": {
-      "name": "Acute bronchitis",
-      "description": "Inflammation of the bronchial tubes, often after a viral infection, causing cough and chest discomfort.",
-      "severity": "moderate",
-      "advice": "Rest, drink fluids, and avoid smoking or smoke exposure.",
-      "home_remedies": "Warm drinks, honey (for adults), and humidified air.",
-      "when_to_see_doctor": "If cough lasts more than 3 weeks, you cough up blood, or have high fever or breathing difficulty."
-    }
-  },
-  {
-    "model": "symptoms.condition",
-    "pk": 6,
-    "fields": {
-      "name": "Pneumonia (suspected)",
-      "description": "An infection that inflames air sacs in one or both lungs, which may fill with fluid.",
-      "severity": "severe",
-      "advice": "Seek medical evaluation promptly. Pneumonia often needs antibiotics or hospital care.",
-      "home_remedies": "Rest and hydration can support recovery but do not replace medical treatment.",
-      "when_to_see_doctor": "Immediately, especially with shortness of breath, chest pain, high fever, or confusion."
-    }
-  },
-  {
-    "model": "symptoms.condition",
-    "pk": 7,
-    "fields": {
-      "name": "Gastroenteritis (stomach flu)",
-      "description": "An infection causing inflammation of the stomach and intestines, leading to diarrhea, vomiting and cramps.",
-      "severity": "moderate",
-      "advice": "Drink plenty of fluids to avoid dehydration and rest the gut with light foods.",
-      "home_remedies": "Oral rehydration solutions, clear fluids, and bland foods like rice or toast when tolerated.",
-      "when_to_see_doctor": "If you cannot keep fluids down, have blood in stool, or signs of severe dehydration."
-    }
-  },
-  {
-    "model": "symptoms.condition",
-    "pk": 8,
-    "fields": {
-      "name": "Irritable bowel-like symptoms",
-      "description": "Recurring stomach pain with changes in bowel habits without obvious infection.",
-      "severity": "mild",
-      "advice": "Track which foods trigger symptoms and manage stress levels.",
-      "home_remedies": "Fiber adjustment, warm compress on the abdomen, and gentle physical activity.",
-      "when_to_see_doctor": "If symptoms are persistent, severe, or associated with weight loss or blood in stool."
-    }
-  },
-  {
-    "model": "symptoms.condition",
-    "pk": 9,
-    "fields": {
-      "name": "Urinary tract infection (UTI)",
-      "description": "An infection in any part of the urinary system, often causing burning and frequent urination.",
-      "severity": "moderate",
-      "advice": "Increase fluid intake and seek medical advice for possible antibiotics.",
-      "home_remedies": "Drinking water regularly and avoiding irritants like caffeine or alcohol.",
-      "when_to_see_doctor": "If you have fever, back pain, blood in urine, or symptoms do not improve in 1\u20132 days."
-    }
-  },
-  {
-    "model": "symptoms.condition",
-    "pk": 10,
-    "fields": {
-      "name": "Tension-type headache",
-      "description": "A common headache with a band-like pressure around the head.",
-      "severity": "mild",
-      "advice": "Take breaks from screens, manage stress, and consider over-the-counter pain relief if appropriate.",
-      "home_remedies": "Resting in a quiet, dark room, stretching neck muscles, and staying hydrated.",
-      "when_to_see_doctor": "If headaches are frequent, sudden and severe, or associated with neurological symptoms."
-    }
-  },
-  {
-    "model": "symptoms.condition",
-    "pk": 11,
-    "fields": {
-      "name": "Migraine-like headache",
-      "description": "A throbbing headache often on one side, sometimes with nausea and light sensitivity.",
-      "severity": "moderate",
-      "advice": "Rest in a quiet, dark room and avoid known triggers.",
-      "home_remedies": "Cold or warm compress on the head/neck and controlled breathing techniques.",
-      "when_to_see_doctor": "If headaches are new, very severe, or different from your usual pattern."
-    }
-  },
-  {
-    "model": "symptoms.condition",
-    "pk": 12,
-    "fields": {
-      "name": "Anxiety-related symptoms",
-      "description": "Physical symptoms such as palpitations, sweating, and restlessness related to anxiety.",
-      "severity": "mild",
-      "advice": "Practice relaxation techniques and ensure regular sleep and exercise.",
-      "home_remedies": "Deep breathing, mindfulness exercises, and talking with supportive people.",
-      "when_to_see_doctor": "If anxiety interferes with daily life or you have thoughts of self-harm."
-    }
-  },
-  {
-    "model": "symptoms.condition",
-    "pk": 13,
-    "fields": {
-      "name": "Depression-like symptoms",
-      "description": "Low mood, reduced interest, poor sleep, or low energy for a prolonged period.",
-      "severity": "moderate",
-      "advice": "Reach out for support from trusted people and consider speaking to a professional.",
-      "home_remedies": "Gentle activity, regular routine, and doing small enjoyable activities.",
-      "when_to_see_doctor": "If symptoms last more than two weeks or you have any thoughts of self-harm."
-    }
-  },
-  {
-    "model": "symptoms.conditionsymptom",
-    "pk": 1,
-    "fields": {
-      "condition": 1,
-      "symptom": 1,
-      "weight": 5
-    }
-  },
-  {
-    "model": "symptoms.conditionsymptom",
-    "pk": 2,
-    "fields": {
-      "condition": 1,
-      "symptom": 2,
-      "weight": 4
-    }
-  },
-  {
-    "model": "symptoms.conditionsymptom",
-    "pk": 3,
-    "fields": {
-      "condition": 1,
-      "symptom": 5,
-      "weight": 4
-    }
-  },
-  {
-    "model": "symptoms.conditionsymptom",
-    "pk": 4,
-    "fields": {
-      "condition": 1,
-      "symptom": 4,
-      "weight": 3
-    }
-  },
-  {
-    "model": "symptoms.conditionsymptom",
-    "pk": 5,
-    "fields": {
-      "condition": 1,
-      "symptom": 17,
-      "weight": 4
-    }
-  },
-  {
-    "model": "symptoms.conditionsymptom",
-    "pk": 6,
-    "fields": {
-      "condition": 1,
-      "symptom": 33,
-      "weight": 3
-    }
-  },
-  {
-    "model": "symptoms.conditionsymptom",
-    "pk": 7,
-    "fields": {
-      "condition": 2,
-      "symptom": 6,
-      "weight": 5
-    }
-  },
-  {
-    "model": "symptoms.conditionsymptom",
-    "pk": 8,
-    "fields": {
-      "condition": 2,
-      "symptom": 7,
-      "weight": 4
-    }
-  },
-  {
-    "model": "symptoms.conditionsymptom",
-    "pk": 9,
-    "fields": {
-      "condition": 2,
-      "symptom": 8,
-      "weight": 4
-    }
-  },
-  {
-    "model": "symptoms.conditionsymptom",
-    "pk": 10,
-    "fields": {
-      "condition": 2,
-      "symptom": 3,
-      "weight": 3
-    }
-  },
-  {
-    "model": "symptoms.conditionsymptom",
-    "pk": 11,
-    "fields": {
-      "condition": 2,
-      "symptom": 4,
-      "weight": 2
-    }
-  },
-  {
-    "model": "symptoms.conditionsymptom",
-    "pk": 12,
-    "fields": {
-      "condition": 3,
-      "symptom": 1,
-      "weight": 5
-    }
-  },
-  {
-    "model": "symptoms.conditionsymptom",
-    "pk": 13,
-    "fields": {
-      "condition": 3,
-      "symptom": 2,
-      "weight": 5
-    }
-  },
-  {
-    "model": "symptoms.conditionsymptom",
-    "pk": 14,
-    "fields": {
-      "condition": 3,
-      "symptom": 5,
-      "weight": 4
-    }
-  },
-  {
-    "model": "symptoms.conditionsymptom",
-    "pk": 15,
-    "fields": {
-      "condition": 3,
-      "symptom": 6,
-      "weight": 2
-    }
-  },
-  {
-    "model": "symptoms.conditionsymptom",
-    "pk": 16,
-    "fields": {
-      "condition": 3,
-      "symptom": 4,
-      "weight": 3
-    }
-  },
-  {
-    "model": "symptoms.conditionsymptom",
-    "pk": 17,
-    "fields": {
-      "condition": 3,
-      "symptom": 9,
-      "weight": 4
-    }
-  },
-  {
-    "model": "symptoms.conditionsymptom",
-    "pk": 18,
-    "fields": {
-      "condition": 4,
-      "symptom": 6,
-      "weight": 4
-    }
-  },
-  {
-    "model": "symptoms.conditionsymptom",
-    "pk": 19,
-    "fields": {
-      "condition": 4,
-      "symptom": 7,
-      "weight": 5
-    }
-  },
-  {
-    "model": "symptoms.conditionsymptom",
-    "pk": 20,
-    "fields": {
-      "condition": 4,
-      "symptom": 8,
-      "weight": 5
-    }
-  },
-  {
-    "model": "symptoms.conditionsymptom",
-    "pk": 21,
-    "fields": {
-      "condition": 4,
-      "symptom": 24,
-      "weight": 3
-    }
-  },
-  {
-    "model": "symptoms.conditionsymptom",
-    "pk": 22,
-    "fields": {
-      "condition": 5,
-      "symptom": 2,
-      "weight": 5
-    }
-  },
-  {
-    "model": "symptoms.conditionsymptom",
-    "pk": 23,
-    "fields": {
-      "condition": 5,
-      "symptom": 9,
-      "weight": 3
-    }
-  },
-  {
-    "model": "symptoms.conditionsymptom",
-    "pk": 24,
-    "fields": {
-      "condition": 5,
-      "symptom": 10,
-      "weight": 3
-    }
-  },
-  {
-    "model": "symptoms.conditionsymptom",
-    "pk": 25,
-    "fields": {
-      "condition": 5,
-      "symptom": 11,
-      "weight": 4
-    }
-  },
-  {
-    "model": "symptoms.conditionsymptom",
-    "pk": 26,
-    "fields": {
-      "condition": 5,
-      "symptom": 1,
-      "weight": 2
-    }
-  },
-  {
-    "model": "symptoms.conditionsymptom",
-    "pk": 27,
-    "fields": {
-      "condition": 6,
-      "symptom": 1,
-      "weight": 5
-    }
-  },
-  {
-    "model": "symptoms.conditionsymptom",
-    "pk": 28,
-    "fields": {
-      "condition": 6,
-      "symptom": 2,
-      "weight": 4
-    }
-  },
-  {
-    "model": "symptoms.conditionsymptom",
-    "pk": 29,
-    "fields": {
-      "condition": 6,
-      "symptom": 9,
-      "weight": 5
-    }
-  },
-  {
-    "model": "symptoms.conditionsymptom",
-    "pk": 30,
-    "fields": {
-      "condition": 6,
-      "symptom": 10,
-      "weight": 4
-    }
-  },
-  {
-    "model": "symptoms.conditionsymptom",
-    "pk": 31,
-    "fields": {
-      "condition": 6,
-      "symptom": 5,
-      "weight": 3
-    }
-  },
-  {
-    "model": "symptoms.conditionsymptom",
-    "pk": 32,
-    "fields": {
-      "condition": 7,
-      "symptom": 12,
-      "weight": 4
-    }
-  },
-  {
-    "model": "symptoms.conditionsymptom",
-    "pk": 33,
-    "fields": {
-      "condition": 7,
-      "symptom": 13,
-      "weight": 5
-    }
-  },
-  {
-    "model": "symptoms.conditionsymptom",
-    "pk": 34,
-    "fields": {
-      "condition": 7,
-      "symptom": 14,
-      "weight": 5
-    }
-  },
-  {
-    "model": "symptoms.conditionsymptom",
-    "pk": 35,
-    "fields": {
-      "condition": 7,
-      "symptom": 15,
-      "weight": 3
-    }
-  },
-  {
-    "model": "symptoms.conditionsymptom",
-    "pk": 36,
-    "fields": {
-      "condition": 7,
-      "symptom": 16,
-      "weight": 3
-    }
-  },
-  {
-    "model": "symptoms.conditionsymptom",
-    "pk": 37,
-    "fields": {
-      "condition": 8,
-      "symptom": 15,
-      "weight": 4
-    }
-  },
-  {
-    "model": "symptoms.conditionsymptom",
-    "pk": 38,
-    "fields": {
-      "condition": 8,
-      "symptom": 36,
-      "weight": 3
-    }
-  },
-  {
-    "model": "symptoms.conditionsymptom",
-    "pk": 39,
-    "fields": {
-      "condition": 8,
-      "symptom": 37,
-      "weight": 3
-    }
-  },
-  {
-    "model": "symptoms.conditionsymptom",
-    "pk": 40,
-    "fields": {
-      "condition": 8,
-      "symptom": 14,
-      "weight": 2
-    }
-  },
-  {
-    "model": "symptoms.conditionsymptom",
-    "pk": 41,
-    "fields": {
-      "condition": 9,
-      "symptom": 38,
-      "weight": 5
-    }
-  },
-  {
-    "model": "symptoms.conditionsymptom",
-    "pk": 42,
-    "fields": {
-      "condition": 9,
-      "symptom": 39,
-      "weight": 4
-    }
-  },
-  {
-    "model": "symptoms.conditionsymptom",
-    "pk": 43,
-    "fields": {
-      "condition": 9,
-      "symptom": 40,
-      "weight": 3
-    }
-  },
-  {
-    "model": "symptoms.conditionsymptom",
-    "pk": 44,
-    "fields": {
-      "condition": 9,
-      "symptom": 41,
-      "weight": 3
-    }
-  },
-  {
-    "model": "symptoms.conditionsymptom",
-    "pk": 45,
-    "fields": {
-      "condition": 9,
-      "symptom": 1,
-      "weight": 2
-    }
-  },
-  {
-    "model": "symptoms.conditionsymptom",
-    "pk": 46,
-    "fields": {
-      "condition": 10,
-      "symptom": 4,
-      "weight": 5
-    }
-  },
-  {
-    "model": "symptoms.conditionsymptom",
-    "pk": 47,
-    "fields": {
-      "condition": 10,
-      "symptom": 19,
-      "weight": 3
-    }
-  },
-  {
-    "model": "symptoms.conditionsymptom",
-    "pk": 48,
-    "fields": {
-      "condition": 10,
-      "symptom": 20,
-      "weight": 3
-    }
-  },
-  {
-    "model": "symptoms.conditionsymptom",
-    "pk": 49,
-    "fields": {
-      "condition": 10,
-      "symptom": 42,
-      "weight": 2
-    }
-  },
-  {
-    "model": "symptoms.conditionsymptom",
-    "pk": 50,
-    "fields": {
-      "condition": 11,
-      "symptom": 4,
-      "weight": 5
-    }
-  },
-  {
-    "model": "symptoms.conditionsymptom",
-    "pk": 51,
-    "fields": {
-      "condition": 11,
-      "symptom": 12,
-      "weight": 3
-    }
-  },
-  {
-    "model": "symptoms.conditionsymptom",
-    "pk": 52,
-    "fields": {
-      "condition": 11,
-      "symptom": 26,
-      "weight": 4
-    }
-  },
-  {
-    "model": "symptoms.conditionsymptom",
-    "pk": 53,
-    "fields": {
-      "condition": 11,
-      "symptom": 19,
-      "weight": 4
-    }
-  },
-  {
-    "model": "symptoms.conditionsymptom",
-    "pk": 54,
-    "fields": {
-      "condition": 12,
-      "symptom": 21,
-      "weight": 4
-    }
-  },
-  {
-    "model": "symptoms.conditionsymptom",
-    "pk": 55,
-    "fields": {
-      "condition": 12,
-      "symptom": 42,
-      "weight": 3
-    }
-  },
-  {
-    "model": "symptoms.conditionsymptom",
-    "pk": 56,
-    "fields": {
-      "condition": 12,
-      "symptom": 43,
-      "weight": 5
-    }
-  },
-  {
-    "model": "symptoms.conditionsymptom",
-    "pk": 57,
-    "fields": {
-      "condition": 12,
-      "symptom": 45,
-      "weight": 4
-    }
-  },
-  {
-    "model": "symptoms.conditionsymptom",
-    "pk": 58,
-    "fields": {
-      "condition": 13,
-      "symptom": 5,
-      "weight": 4
-    }
-  },
-  {
-    "model": "symptoms.conditionsymptom",
-    "pk": 59,
-    "fields": {
-      "condition": 13,
-      "symptom": 16,
-      "weight": 4
-    }
-  },
-  {
-    "model": "symptoms.conditionsymptom",
-    "pk": 60,
-    "fields": {
-      "condition": 13,
-      "symptom": 42,
-      "weight": 3
-    }
-  },
-  {
-    "model": "symptoms.conditionsymptom",
-    "pk": 61,
-    "fields": {
-      "condition": 13,
-      "symptom": 44,
-      "weight": 5
-    }
-  },
-  {
-    "model": "symptoms.symptom",
-    "pk": 101,
-    "fields": {
-      "name": "Dry cough",
-      "body_part": "Chest"
-    }
-  },
-  {
-    "model": "symptoms.symptom",
-    "pk": 102,
-    "fields": {
-      "name": "Wet cough (mucus)",
-      "body_part": "Chest"
-    }
-  },
-  {
-    "model": "symptoms.symptom",
-    "pk": 103,
-    "fields": {
-      "name": "Loss of smell",
-      "body_part": "Nose"
-    }
-  },
-  {
-    "model": "symptoms.symptom",
-    "pk": 104,
-    "fields": {
-      "name": "Loss of taste",
-      "body_part": "Mouth"
-    }
-  },
-  {
-    "model": "symptoms.symptom",
-    "pk": 105,
-    "fields": {
-      "name": "Acid reflux (burning chest)",
-      "body_part": "Stomach"
-    }
-  },
-  {
-    "model": "symptoms.symptom",
-    "pk": 106,
-    "fields": {
-      "name": "Gas / bloating",
-      "body_part": "Stomach"
-    }
-  },
-  {
-    "model": "symptoms.symptom",
-    "pk": 107,
-    "fields": {
-      "name": "Dry eyes",
-      "body_part": "Eyes"
-    }
-  },
-  {
-    "model": "symptoms.symptom",
-    "pk": 108,
-    "fields": {
-      "name": "Cracked lips",
-      "body_part": "Mouth"
-    }
-  },
-  {
-    "model": "symptoms.symptom",
-    "pk": 109,
-    "fields": {
-      "name": "Excessive thirst",
-      "body_part": "Whole body"
-    }
-  },
-  {
-    "model": "symptoms.symptom",
-    "pk": 110,
-    "fields": {
-      "name": "Trembling hands",
-      "body_part": "Hands"
-    }
-  },
-  {
-    "model": "symptoms.symptom",
-    "pk": 111,
-    "fields": {
-      "name": "Leg swelling",
-      "body_part": "Legs"
-    }
-  },
-  {
-    "model": "symptoms.symptom",
-    "pk": 112,
-    "fields": {
-      "name": "Ear fullness / pressure",
-      "body_part": "Ears"
-    }
-  },
-  {
-    "model": "symptoms.symptom",
-    "pk": 113,
-    "fields": {
-      "name": "Irritability",
-      "body_part": "Mind"
-    }
-  },
-  {
-    "model": "symptoms.symptom",
-    "pk": 114,
-    "fields": {
-      "name": "Excessive sleepiness",
-      "body_part": "Whole body"
-    }
-  },
-  {
-    "model": "symptoms.condition",
-    "pk": 201,
-    "fields": {
-      "name": "Heat Exhaustion",
-      "description": "Caused by exposure to heat or dehydration, leading to dizziness, headache, and sweating.",
-      "severity": "moderate",
-      "advice": "Move to a cool area, drink ORS/water, rest.",
-      "home_remedies": "Cool shower, oral hydration solution, light clothing.",
-      "when_to_see_doctor": "If nausea, vomiting, or fainting develops."
-    }
-  },
-  {
-    "model": "symptoms.condition",
-    "pk": 202,
-    "fields": {
-      "name": "Acid Reflux (GERD)",
-      "description": "Burning chest pain after eating or lying down.",
-      "severity": "mild",
-      "advice": "Avoid spicy food, avoid lying down immediately after meals.",
-      "home_remedies": "Cold milk, ajwain, smaller frequent meals.",
-      "when_to_see_doctor": "If pain lasts more than one week or worsens."
-    }
-  },
-  {
-    "model": "symptoms.condition",
-    "pk": 203,
-    "fields": {
-      "name": "Sinusitis",
-      "description": "Inflammed sinus cavities causing face pressure and blocked nose.",
-      "severity": "mild",
-      "advice": "Steam inhalation, nasal saline spray.",
-      "home_remedies": "Warm compress on face.",
-      "when_to_see_doctor": "If symptoms persist more than 1 week or fever increases."
-    }
-  },
-  {
-    "model": "symptoms.condition",
-    "pk": 204,
-    "fields": {
-      "name": "Dehydration",
-      "description": "Low body fluid causing dizziness, dry mouth, cracked lips.",
-      "severity": "moderate",
-      "advice": "Drink ORS, avoid caffeine.",
-      "home_remedies": "Coconut water, ORS.",
-      "when_to_see_doctor": "If not urinating, severe tiredness, or confusion."
-    }
-  },
-  {
-    "model": "symptoms.condition",
-    "pk": 205,
-    "fields": {
-      "name": "Mild Food Poisoning",
-      "description": "Stomach upset from contaminated food.",
-      "severity": "moderate",
-      "advice": "Hydrate with ORS, avoid solid food for 8 hours.",
-      "home_remedies": "Ginger tea, curd rice.",
-      "when_to_see_doctor": "If vomiting persistently or signs of dehydration appear."
-    }
-  },
-  {
-    "model": "symptoms.condition",
-    "pk": 206,
-    "fields": {
-      "name": "Tonsillitis",
-      "description": "Inflamed tonsils causing throat pain and fever.",
-      "severity": "moderate",
-      "advice": "Warm gargles, avoid cold drinks.",
-      "home_remedies": "Honey warm water.",
-      "when_to_see_doctor": "If swallowing is difficult or fever is high."
-    }
-  }
+  { "model": "symptoms.symptom", "pk": 1, "fields": { "name": "Fever", "body_part": "Whole body" } },
+  { "model": "symptoms.symptom", "pk": 2, "fields": { "name": "Cough", "body_part": "Chest" } },
+  { "model": "symptoms.symptom", "pk": 3, "fields": { "name": "Sore throat", "body_part": "Throat" } },
+  { "model": "symptoms.symptom", "pk": 4, "fields": { "name": "Headache", "body_part": "Head" } },
+  { "model": "symptoms.symptom", "pk": 5, "fields": { "name": "Fatigue", "body_part": "Whole body" } },
+  { "model": "symptoms.symptom", "pk": 6, "fields": { "name": "Runny nose", "body_part": "Nose" } },
+  { "model": "symptoms.symptom", "pk": 7, "fields": { "name": "Nasal congestion", "body_part": "Nose" } },
+  { "model": "symptoms.symptom", "pk": 8, "fields": { "name": "Sneezing", "body_part": "Nose" } },
+  { "model": "symptoms.symptom", "pk": 9, "fields": { "name": "Shortness of breath", "body_part": "Chest" } },
+  { "model": "symptoms.symptom", "pk": 10, "fields": { "name": "Chest pain", "body_part": "Chest" } },
+  { "model": "symptoms.symptom", "pk": 11, "fields": { "name": "Wheezing", "body_part": "Chest" } },
+  { "model": "symptoms.symptom", "pk": 12, "fields": { "name": "Nausea", "body_part": "Stomach" } },
+  { "model": "symptoms.symptom", "pk": 13, "fields": { "name": "Vomiting", "body_part": "Stomach" } },
+  { "model": "symptoms.symptom", "pk": 14, "fields": { "name": "Diarrhea", "body_part": "Stomach" } },
+  { "model": "symptoms.symptom", "pk": 15, "fields": { "name": "Abdominal pain", "body_part": "Stomach" } },
+  { "model": "symptoms.symptom", "pk": 16, "fields": { "name": "Loss of appetite", "body_part": "Whole body" } },
+  { "model": "symptoms.symptom", "pk": 17, "fields": { "name": "Muscle aches", "body_part": "Whole body" } },
+  { "model": "symptoms.symptom", "pk": 18, "fields": { "name": "Joint pain", "body_part": "Joints" } },
+  { "model": "symptoms.symptom", "pk": 19, "fields": { "name": "Dizziness", "body_part": "Head" } },
+  { "model": "symptoms.symptom", "pk": 20, "fields": { "name": "Lightheadedness", "body_part": "Head" } },
+  { "model": "symptoms.symptom", "pk": 21, "fields": { "name": "Palpitations", "body_part": "Chest" } },
+  { "model": "symptoms.symptom", "pk": 22, "fields": { "name": "Rash", "body_part": "Skin" } },
+  { "model": "symptoms.symptom", "pk": 23, "fields": { "name": "Itching", "body_part": "Skin" } },
+  { "model": "symptoms.symptom", "pk": 24, "fields": { "name": "Red eyes", "body_part": "Eyes" } },
+  { "model": "symptoms.symptom", "pk": 25, "fields": { "name": "Eye pain", "body_part": "Eyes" } },
+  { "model": "symptoms.symptom", "pk": 26, "fields": { "name": "Photophobia (light sensitivity)", "body_part": "Eyes" } },
+  { "model": "symptoms.symptom", "pk": 27, "fields": { "name": "Ear pain", "body_part": "Ears" } },
+  { "model": "symptoms.symptom", "pk": 28, "fields": { "name": "Hearing loss", "body_part": "Ears" } },
+  { "model": "symptoms.symptom", "pk": 29, "fields": { "name": "Ringing in ears", "body_part": "Ears" } },
+  { "model": "symptoms.symptom", "pk": 30, "fields": { "name": "Back pain", "body_part": "Back" } },
+  { "model": "symptoms.symptom", "pk": 31, "fields": { "name": "Neck pain", "body_part": "Neck" } },
+  { "model": "symptoms.symptom", "pk": 32, "fields": { "name": "Swollen lymph nodes", "body_part": "Neck" } },
+  { "model": "symptoms.symptom", "pk": 33, "fields": { "name": "Chills", "body_part": "Whole body" } },
+  { "model": "symptoms.symptom", "pk": 34, "fields": { "name": "Night sweats", "body_part": "Whole body" } },
+  { "model": "symptoms.symptom", "pk": 35, "fields": { "name": "Unintentional weight loss", "body_part": "Whole body" } },
+  { "model": "symptoms.symptom", "pk": 36, "fields": { "name": "Constipation", "body_part": "Stomach" } },
+  { "model": "symptoms.symptom", "pk": 37, "fields": { "name": "Bloating", "body_part": "Stomach" } },
+  { "model": "symptoms.symptom", "pk": 38, "fields": { "name": "Burning when urinating", "body_part": "Urinary tract" } },
+  { "model": "symptoms.symptom", "pk": 39, "fields": { "name": "Frequent urination", "body_part": "Urinary tract" } },
+  { "model": "symptoms.symptom", "pk": 40, "fields": { "name": "Lower back pain", "body_part": "Back" } },
+  { "model": "symptoms.symptom", "pk": 41, "fields": { "name": "Blood in urine", "body_part": "Urinary tract" } },
+  { "model": "symptoms.symptom", "pk": 42, "fields": { "name": "Difficulty sleeping (insomnia)", "body_part": "Whole body" } },
+  { "model": "symptoms.symptom", "pk": 43, "fields": { "name": "Anxiety", "body_part": "Mind" } },
+  { "model": "symptoms.symptom", "pk": 44, "fields": { "name": "Low mood / sadness", "body_part": "Mind" } },
+  { "model": "symptoms.symptom", "pk": 45, "fields": { "name": "Panic episodes", "body_part": "Mind" } },
+  { "model": "symptoms.symptom", "pk": 46, "fields": { "name": "Tooth pain", "body_part": "Mouth" } },
+  { "model": "symptoms.symptom", "pk": 47, "fields": { "name": "Bleeding gums", "body_part": "Mouth" } },
+  { "model": "symptoms.symptom", "pk": 48, "fields": { "name": "Bad breath", "body_part": "Mouth" } },
+  { "model": "symptoms.symptom", "pk": 49, "fields": { "name": "Stiff joints in the morning", "body_part": "Joints" } },
+  { "model": "symptoms.symptom", "pk": 50, "fields": { "name": "Swollen joints", "body_part": "Joints" } },
+
+  { "model": "symptoms.condition", "pk": 1, "fields": {
+    "name": "Influenza (Flu)",
+    "description": "A common viral infection causing fever, cough, body aches, headache and fatigue.",
+    "severity": "moderate",
+    "advice": "Rest, drink plenty of fluids, and use fever-reducing or pain-relief medicine if needed and appropriate.",
+    "home_remedies": "Stay hydrated, use warm fluids, rest in a comfortable position, and use a humidifier if available.",
+    "when_to_see_doctor": "If symptoms last more than 3–5 days, breathing becomes difficult, or you feel very weak."
+  }},
+  { "model": "symptoms.condition", "pk": 2, "fields": {
+    "name": "Common cold",
+    "description": "A mild viral infection of the upper respiratory tract, mainly affecting nose and throat.",
+    "severity": "mild",
+    "advice": "Rest, drink fluids, and use basic cold remedies if needed.",
+    "home_remedies": "Steam inhalation, warm soup or tea, saline nasal rinses, and rest.",
+    "when_to_see_doctor": "If symptoms last more than 10 days, you develop high fever, or symptoms suddenly worsen."
+  }},
+  { "model": "symptoms.condition", "pk": 3, "fields": {
+    "name": "Allergic rhinitis (hay fever)",
+    "description": "An allergy of the nose and eyes, often triggered by pollen, dust, or pets.",
+    "severity": "mild",
+    "advice": "Avoid known triggers, keep windows closed during high pollen days, and consider antihistamines if appropriate.",
+    "home_remedies": "Saline nasal rinses, showering after being outdoors, and using air filters or masks.",
+    "when_to_see_doctor": "If symptoms affect sleep, work, or studies, or do not respond to basic measures."
+  }},
+  { "model": "symptoms.condition", "pk": 4, "fields": {
+    "name": "Acute bronchitis",
+    "description": "Inflammation of the bronchial tubes, usually following a cold, causing a persistent cough.",
+    "severity": "moderate",
+    "advice": "Rest, drink fluids, and avoid smoking or second-hand smoke. Seek medical advice if unsure.",
+    "home_remedies": "Warm drinks, honey (for adults), and humidified air.",
+    "when_to_see_doctor": "If cough lasts longer than 3 weeks, you cough up blood, or have high fever or breathing difficulty."
+  }},
+  { "model": "symptoms.condition", "pk": 5, "fields": {
+    "name": "Pneumonia (suspected)",
+    "description": "A lung infection in which air sacs may fill with fluid or pus.",
+    "severity": "severe",
+    "advice": "Seek medical evaluation promptly. Pneumonia often needs antibiotics or hospital care.",
+    "home_remedies": "Rest and hydration can support recovery but do not replace professional treatment.",
+    "when_to_see_doctor": "Immediately if you have high fever, shortness of breath, chest pain, or confusion."
+  }},
+  { "model": "symptoms.condition", "pk": 6, "fields": {
+    "name": "Gastroenteritis (stomach infection)",
+    "description": "An infection of the stomach and intestines causing vomiting, diarrhea, and cramps.",
+    "severity": "moderate",
+    "advice": "Prevent dehydration by drinking fluids in small, frequent sips and resting.",
+    "home_remedies": "Oral rehydration solutions, clear fluids, and bland foods like rice or toast when tolerated.",
+    "when_to_see_doctor": "If you cannot keep fluids down, have blood in stool, or signs of severe dehydration."
+  }},
+  { "model": "symptoms.condition", "pk": 7, "fields": {
+    "name": "Indigestion / functional dyspepsia",
+    "description": "Discomfort or pain in the upper abdomen often associated with eating.",
+    "severity": "mild",
+    "advice": "Eat smaller meals, avoid trigger foods, and avoid lying down soon after eating.",
+    "home_remedies": "Warm water, herbal teas, and gentle walking after meals.",
+    "when_to_see_doctor": "If pain is severe, persistent, or associated with weight loss or difficulty swallowing."
+  }},
+  { "model": "symptoms.condition", "pk": 8, "fields": {
+    "name": "Urinary tract infection (UTI)",
+    "description": "Infection in the urinary system, often causing burning and frequent urination.",
+    "severity": "moderate",
+    "advice": "Increase fluid intake and seek medical advice for possible antibiotics.",
+    "home_remedies": "Drink water regularly and avoid irritants like caffeine or alcohol.",
+    "when_to_see_doctor": "If you have fever, back pain, blood in urine, or symptoms do not improve within 1–2 days."
+  }},
+  { "model": "symptoms.condition", "pk": 9, "fields": {
+    "name": "Tension-type headache",
+    "description": "A common headache described as pressure or tightness around the head.",
+    "severity": "mild",
+    "advice": "Rest, manage stress, and reduce screen time. Simple pain relief may help if appropriate.",
+    "home_remedies": "Quiet dark room, stretching neck and shoulder muscles, and staying hydrated.",
+    "when_to_see_doctor": "If headaches are very frequent, suddenly very severe, or associated with other worrying symptoms."
+  }},
+  { "model": "symptoms.condition", "pk": 10, "fields": {
+    "name": "Migraine-like headache",
+    "description": "A one-sided, throbbing headache, often with nausea and sensitivity to light or sound.",
+    "severity": "moderate",
+    "advice": "Rest in a quiet, dark room and avoid known triggers such as certain foods or stress.",
+    "home_remedies": "Cold or warm compress on the head/neck, relaxation exercises, and regular sleep patterns.",
+    "when_to_see_doctor": "If headaches change pattern, are new and severe, or interfere with daily activities."
+  }},
+  { "model": "symptoms.condition", "pk": 11, "fields": {
+    "name": "Generalized anxiety symptoms",
+    "description": "Physical and emotional symptoms such as worry, restlessness, palpitations, and poor sleep.",
+    "severity": "mild",
+    "advice": "Practice relaxation techniques and maintain regular sleep, exercise, and routine.",
+    "home_remedies": "Deep breathing, mindfulness, and talking with trusted friends or family.",
+    "when_to_see_doctor": "If anxiety affects daily life or you have any thoughts of self-harm."
+  }},
+  { "model": "symptoms.condition", "pk": 12, "fields": {
+    "name": "Low mood / depression-like symptoms",
+    "description": "Persistent low mood, loss of interest, low energy, and changes in sleep or appetite.",
+    "severity": "moderate",
+    "advice": "Reach out for support and consider speaking to a mental health professional.",
+    "home_remedies": "Gentle activity, regular routines, and engaging in small enjoyable activities.",
+    "when_to_see_doctor": "If symptoms last more than two weeks or you have any thoughts of self-harm."
+  }},
+  { "model": "symptoms.condition", "pk": 13, "fields": {
+    "name": "Acute otitis media (ear infection)",
+    "description": "Infection of the middle ear, common in children but can affect adults.",
+    "severity": "moderate",
+    "advice": "Use pain relief if appropriate and keep the ear dry. Seek medical evaluation if pain is strong.",
+    "home_remedies": "Warm compress over the ear and rest.",
+    "when_to_see_doctor": "If severe pain, fever, discharge from ear, or symptoms do not improve in 1–2 days."
+  }},
+  { "model": "symptoms.condition", "pk": 14, "fields": {
+    "name": "Dental cavity / tooth infection (suspected)",
+    "description": "Decay or infection in a tooth causing toothache and sometimes swelling.",
+    "severity": "moderate",
+    "advice": "Maintain oral hygiene and seek dental care as soon as possible.",
+    "home_remedies": "Warm salt-water rinses and avoiding very hot, cold, or sugary foods.",
+    "when_to_see_doctor": "If pain is strong, persisting, or you have swelling or fever."
+  }},
+  { "model": "symptoms.condition", "pk": 15, "fields": {
+    "name": "Osteoarthritis-like joint pain",
+    "description": "Degenerative joint changes causing pain, stiffness, and reduced movement.",
+    "severity": "mild",
+    "advice": "Maintain regular low-impact exercise and maintain a healthy weight.",
+    "home_remedies": "Warm or cold packs on joints and gentle stretching.",
+    "when_to_see_doctor": "If pain limits daily activities or joints become very swollen or deformed."
+  }},
+
+  { "model": "symptoms.conditionsymptom", "pk": 1,  "fields": { "condition": 1,  "symptom": 1,  "weight": 5 } },
+  { "model": "symptoms.conditionsymptom", "pk": 2,  "fields": { "condition": 1,  "symptom": 2,  "weight": 4 } },
+  { "model": "symptoms.conditionsymptom", "pk": 3,  "fields": { "condition": 1,  "symptom": 5,  "weight": 4 } },
+  { "model": "symptoms.conditionsymptom", "pk": 4,  "fields": { "condition": 1,  "symptom": 4,  "weight": 3 } },
+  { "model": "symptoms.conditionsymptom", "pk": 5,  "fields": { "condition": 1,  "symptom": 17, "weight": 4 } },
+  { "model": "symptoms.conditionsymptom", "pk": 6,  "fields": { "condition": 1,  "symptom": 33, "weight": 3 } },
+
+  { "model": "symptoms.conditionsymptom", "pk": 7,  "fields": { "condition": 2,  "symptom": 6,  "weight": 5 } },
+  { "model": "symptoms.conditionsymptom", "pk": 8,  "fields": { "condition": 2,  "symptom": 7,  "weight": 4 } },
+  { "model": "symptoms.conditionsymptom", "pk": 9,  "fields": { "condition": 2,  "symptom": 8,  "weight": 4 } },
+  { "model": "symptoms.conditionsymptom", "pk": 10, "fields": { "condition": 2,  "symptom": 3,  "weight": 3 } },
+  { "model": "symptoms.conditionsymptom", "pk": 11, "fields": { "condition": 2,  "symptom": 4,  "weight": 2 } },
+
+  { "model": "symptoms.conditionsymptom", "pk": 12, "fields": { "condition": 3,  "symptom": 6,  "weight": 4 } },
+  { "model": "symptoms.conditionsymptom", "pk": 13, "fields": { "condition": 3,  "symptom": 7,  "weight": 5 } },
+  { "model": "symptoms.conditionsymptom", "pk": 14, "fields": { "condition": 3,  "symptom": 8,  "weight": 5 } },
+  { "model": "symptoms.conditionsymptom", "pk": 15, "fields": { "condition": 3,  "symptom": 24, "weight": 3 } },
+
+  { "model": "symptoms.conditionsymptom", "pk": 16, "fields": { "condition": 4,  "symptom": 2,  "weight": 5 } },
+  { "model": "symptoms.conditionsymptom", "pk": 17, "fields": { "condition": 4,  "symptom": 9,  "weight": 3 } },
+  { "model": "symptoms.conditionsymptom", "pk": 18, "fields": { "condition": 4,  "symptom": 10, "weight": 3 } },
+  { "model": "symptoms.conditionsymptom", "pk": 19, "fields": { "condition": 4,  "symptom": 11, "weight": 4 } },
+  { "model": "symptoms.conditionsymptom", "pk": 20, "fields": { "condition": 4,  "symptom": 1,  "weight": 2 } },
+
+  { "model": "symptoms.conditionsymptom", "pk": 21, "fields": { "condition": 5,  "symptom": 1,  "weight": 5 } },
+  { "model": "symptoms.conditionsymptom", "pk": 22, "fields": { "condition": 5,  "symptom": 2,  "weight": 4 } },
+  { "model": "symptoms.conditionsymptom", "pk": 23, "fields": { "condition": 5,  "symptom": 9,  "weight": 5 } },
+  { "model": "symptoms.conditionsymptom", "pk": 24, "fields": { "condition": 5,  "symptom": 10, "weight": 4 } },
+  { "model": "symptoms.conditionsymptom", "pk": 25, "fields": { "condition": 5,  "symptom": 5,  "weight": 3 } },
+
+  { "model": "symptoms.conditionsymptom", "pk": 26, "fields": { "condition": 6,  "symptom": 12, "weight": 4 } },
+  { "model": "symptoms.conditionsymptom", "pk": 27, "fields": { "condition": 6,  "symptom": 13, "weight": 5 } },
+  { "model": "symptoms.conditionsymptom", "pk": 28, "fields": { "condition": 6,  "symptom": 14, "weight": 5 } },
+  { "model": "symptoms.conditionsymptom", "pk": 29, "fields": { "condition": 6,  "symptom": 15, "weight": 3 } },
+  { "model": "symptoms.conditionsymptom", "pk": 30, "fields": { "condition": 6,  "symptom": 16, "weight": 3 } },
+
+  { "model": "symptoms.conditionsymptom", "pk": 31, "fields": { "condition": 7,  "symptom": 15, "weight": 4 } },
+  { "model": "symptoms.conditionsymptom", "pk": 32, "fields": { "condition": 7,  "symptom": 36, "weight": 3 } },
+  { "model": "symptoms.conditionsymptom", "pk": 33, "fields": { "condition": 7,  "symptom": 37, "weight": 3 } },
+  { "model": "symptoms.conditionsymptom", "pk": 34, "fields": { "condition": 7,  "symptom": 14, "weight": 2 } },
+
+  { "model": "symptoms.conditionsymptom", "pk": 35, "fields": { "condition": 8,  "symptom": 38, "weight": 5 } },
+  { "model": "symptoms.conditionsymptom", "pk": 36, "fields": { "condition": 8,  "symptom": 39, "weight": 4 } },
+  { "model": "symptoms.conditionsymptom", "pk": 37, "fields": { "condition": 8,  "symptom": 40, "weight": 3 } },
+  { "model": "symptoms.conditionsymptom", "pk": 38, "fields": { "condition": 8,  "symptom": 41, "weight": 3 } },
+  { "model": "symptoms.conditionsymptom", "pk": 39, "fields": { "condition": 8,  "symptom": 1,  "weight": 2 } },
+
+  { "model": "symptoms.conditionsymptom", "pk": 40, "fields": { "condition": 9,  "symptom": 4,  "weight": 5 } },
+  { "model": "symptoms.conditionsymptom", "pk": 41, "fields": { "condition": 9,  "symptom": 19, "weight": 3 } },
+  { "model": "symptoms.conditionsymptom", "pk": 42, "fields": { "condition": 9,  "symptom": 20, "weight": 3 } },
+  { "model": "symptoms.conditionsymptom", "pk": 43, "fields": { "condition": 9,  "symptom": 42, "weight": 2 } },
+
+  { "model": "symptoms.conditionsymptom", "pk": 44, "fields": { "condition": 10, "symptom": 4,  "weight": 5 } },
+  { "model": "symptoms.conditionsymptom", "pk": 45, "fields": { "condition": 10, "symptom": 12, "weight": 3 } },
+  { "model": "symptoms.conditionsymptom", "pk": 46, "fields": { "condition": 10, "symptom": 26, "weight": 4 } },
+  { "model": "symptoms.conditionsymptom", "pk": 47, "fields": { "condition": 10, "symptom": 19, "weight": 4 } },
+
+  { "model": "symptoms.conditionsymptom", "pk": 48, "fields": { "condition": 11, "symptom": 21, "weight": 4 } },
+  { "model": "symptoms.conditionsymptom", "pk": 49, "fields": { "condition": 11, "symptom": 42, "weight": 3 } },
+  { "model": "symptoms.conditionsymptom", "pk": 50, "fields": { "condition": 11, "symptom": 43, "weight": 5 } },
+  { "model": "symptoms.conditionsymptom", "pk": 51, "fields": { "condition": 11, "symptom": 45, "weight": 4 } },
+
+  { "model": "symptoms.conditionsymptom", "pk": 52, "fields": { "condition": 12, "symptom": 5,  "weight": 4 } },
+  { "model": "symptoms.conditionsymptom", "pk": 53, "fields": { "condition": 12, "symptom": 16, "weight": 4 } },
+  { "model": "symptoms.conditionsymptom", "pk": 54, "fields": { "condition": 12, "symptom": 42, "weight": 3 } },
+  { "model": "symptoms.conditionsymptom", "pk": 55, "fields": { "condition": 12, "symptom": 44, "weight": 5 } },
+
+  { "model": "symptoms.conditionsymptom", "pk": 56, "fields": { "condition": 13, "symptom": 27, "weight": 5 } },
+  { "model": "symptoms.conditionsymptom", "pk": 57, "fields": { "condition": 13, "symptom": 1,  "weight": 2 } },
+  { "model": "symptoms.conditionsymptom", "pk": 58, "fields": { "condition": 13, "symptom": 28, "weight": 3 } },
+
+  { "model": "symptoms.conditionsymptom", "pk": 59, "fields": { "condition": 14, "symptom": 46, "weight": 5 } },
+  { "model": "symptoms.conditionsymptom", "pk": 60, "fields": { "condition": 14, "symptom": 47, "weight": 4 } },
+  { "model": "symptoms.conditionsymptom", "pk": 61, "fields": { "condition": 14, "symptom": 48, "weight": 3 } },
+  { "model": "symptoms.conditionsymptom", "pk": 62, "fields": { "condition": 14, "symptom": 1,  "weight": 2 } },
+
+  { "model": "symptoms.conditionsymptom", "pk": 63, "fields": { "condition": 15, "symptom": 18, "weight": 4 } },
+  { "model": "symptoms.conditionsymptom", "pk": 64, "fields": { "condition": 15, "symptom": 49, "weight": 5 } },
+  { "model": "symptoms.conditionsymptom", "pk": 65, "fields": { "condition": 15, "symptom": 50, "weight": 4 } },
+  { "model": "symptoms.conditionsymptom", "pk": 66, "fields": { "condition": 15, "symptom": 30, "weight": 3 } }
 ]
