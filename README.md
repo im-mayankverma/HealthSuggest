@@ -1,61 +1,120 @@
-# HealthSuggest
+# HealthSuggest – Symptom-Based Health Suggestion System
 
-HealthSuggest is a simple Django-based symptom suggestion tool.  
-You select symptoms, duration, and how severe you feel, and the app suggests the **most likely condition** plus a short list of **other possible conditions**.  
-This is **not a diagnosis tool** and is for informational purposes only.
+HealthSuggest is a **Django-based web application** that gives **basic health suggestions** based on user-selected symptoms, duration, and self-rated severity.
+
+It uses a **rule-based scoring system** on top of a structured dataset of symptoms and conditions stored inside the project (via Django fixtures), so it can run easily on any machine after cloning.
+
+> **Important:** This is an educational project.  
+> It is **not** a medical diagnosis tool and must **not** be used for real medical decisions.
 
 ---
 
 ## Features
 
-- Select multiple symptoms from a searchable list
-- Enter how many days you’ve had the symptoms
-- Choose your own feeling of severity (Mild / Moderate / Severe)
-- App calculates:
-  - A **best matching condition**
-  - **Match percentage** and risk level (Low / Medium / High)
-  - A short list of **other possible conditions**
-- Clean, mobile-friendly UI with:
-  - Selected symptoms shown as chips
-  - Highlighted risk badge
-  - “Print / Save” button on the result page
-- All logic is **rule-based** (no paid APIs)
+- Searchable list of symptoms grouped by body part (e.g., head, chest, stomach, skin, mind, etc.)
+- Select **multiple symptoms** via checkboxes
+- Input for:
+  - Duration of symptoms (in days)
+  - User’s perceived severity (Mild / Moderate / Severe)
+- Suggestion engine:
+  - Calculates a **score** for each condition based on symptom weights
+  - Shows **best-matched condition**
+  - Lists **other possible conditions** with match percentages
+  - Displays **severity**, **advice**, **home_remedies**, and **when_to_see_doctor**
+- Clean and responsive UI:
+  - Selected symptoms shown as “chips”
+  - Colored cards/labels for severity and risk
+  - **Print / Save** button on results page
+- Initial data stored as a **fixture** (`initial_data.json`) so all symptoms and conditions travel with the project in Git.
+
+---
+
+## Technology Stack
+
+- **Language:** Python 3.x  
+- **Framework:** Django (MVT architecture)  
+- **Database (Recommended):** SQLite (default Django DB)  
+- **Frontend:** HTML, CSS, vanilla JavaScript, Django templates  
+- **Version Control:** Git & GitHub (`im-mayankverma/HealthSuggest`)  
+- **Environment:** Python virtual environment (`venv`)
+
+---
+
+## Project Structure (simplified)
+
+```text
+manage.py
+healthsuggest/              # Django project settings & URLs
+    __init__.py             # (optional) project init
+    settings.py             # DATABASES, INSTALLED_APPS, templates, etc.
+    urls.py
+    asgi.py / wsgi.py
+
+symptoms/                   # Main app
+    models.py               # Symptom, Condition, ConditionSymptom
+    views.py                # home, get_suggestions logic
+    urls.py                 # app-level URLs (if used)
+    templates/
+        symptoms/
+            base.html       # Common layout
+            home.html       # Symptom selection form
+            results.html    # Suggestions and risk view
+    fixtures/
+        initial_data.json   # Initial symptoms & conditions data
+
+static/
+    css/
+        style.css           # Main CSS styling
+docs/
+    home-page.png           # Screenshot: home page
+    results-page.png        # Screenshot: result page
+README.md
+requirements.txt
+```
 
 ---
 
 ## Screenshots
 
-### Home page – select symptoms
+### Home page – Select symptoms
 
 ![Home page](docs/home-page.png)
 
-### Results page – suggestion and risk level
+### Results page – Suggestions and risk level
 
 ![Results page](docs/results-page.png)
 
 ---
 
-## Technology stack
+## How the Suggestion Logic Works
 
-- **Backend**: Django (Python)
-- **Frontend**: Django templates, CSS (custom)
-- **Database**: SQLite (by default) or your chosen DB
-- **Environment**: Python 3.x
+1. User selects symptoms, duration, and perceived severity.
+2. For each condition:
+   - The app finds all matching `ConditionSymptom` records for the selected symptoms.
+   - It sums the **weight** values to get a score.
+3. The condition with the **highest score** is the **best match**.
+4. Other conditions with non-zero scores are listed as **“other possible conditions”**.
+5. A simple **risk level** (Low / Medium / High) can be derived from:
+   - Match score
+   - Stored severity of the condition (mild / moderate / severe)
+   - User’s reported severity
+
+This is a **transparent, rule-based** system (no black-box machine learning).
 
 ---
 
-## Getting started (local development)
+## Setup Instructions (Windows / any new PC)
 
 ### 1. Clone the repository
 
 ```bash
 git clone https://github.com/im-mayankverma/HealthSuggest.git
-cd healthsuggest
+cd HealthSuggest
 ```
 
-### 2. Create a virtual environment
+### 2. Create and activate a virtual environment
 
-On Windows (Command Prompt or PowerShell):
+On Windows (Command Prompt / PowerShell):
 
 ```bash
 python -m venv venv
@@ -68,66 +127,113 @@ venv\Scripts\activate
 pip install -r requirements.txt
 ```
 
-### 4. Apply migrations
+> If you are only using SQLite (recommended for local/dev), there is **no need** to install MySQL drivers.
+
+### 4. Configure database (SQLite recommended)
+
+In `healthsuggest/settings.py`, ensure your `DATABASES` section looks like this:
+
+```python
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'db.sqlite3',
+    }
+}
+```
+
+SQLite is file-based and works out of the box; no extra server install needed.
+
+### 5. Apply migrations
 
 ```bash
 python manage.py migrate
 ```
 
-### 5. Create sample data (optional)
+This creates the required tables in `db.sqlite3`.
 
-In your project folder:
+### 6. Load initial data (symptoms + conditions)
+
+The project includes a fixture file `symptoms/fixtures/initial_data.json`
+containing multiple symptoms, conditions, and weighted links between them.
+
+Load it with:
 
 ```bash
-python manage.py shell
+python manage.py loaddata initial_data
 ```
 
-Then paste the data seeding script you created earlier (symptoms, conditions, ConditionSymptom mappings) and run it.
+You should see something like:
 
-### 6. Run the development server
+```text
+Installed XX object(s) from 1 fixture(s)
+```
+
+(XX is the number of objects in the fixture.)
+
+### 7. Run the development server
 
 ```bash
 python manage.py runserver
 ```
 
-Open your browser and visit:
+Open your browser and go to:
 
 - http://127.0.0.1:8000/
 
----
+You should now see:
 
-## Project structure (simplified)
-
-```text
-manage.py
-healthsuggest/          # Django project settings
-symptoms/               # Main app
-    models.py           # Symptom, Condition, ConditionSymptom
-    views.py            # home, get_suggestions logic
-    templates/
-        symptoms/
-            base.html   # Layout, header, footer
-            home.html   # Symptom selection form
-            results.html# Suggestions and risk view
-static/
-    css/
-        style.css       # Styling for the whole app
-docs/
-    home-page.png       # Screenshot: home page
-    results-page.png    # Screenshot: results page
-README.md
-requirements.txt
-```
+- Home page with a list of symptoms.
+- Ability to select symptoms and see suggested conditions.
 
 ---
 
-## Important disclaimer
+## Development Notes
 
-This project is for **learning and demonstration** only.
+- **Fixtures:**  
+  - All starter data lives in `symptoms/fixtures/initial_data.json`.  
+  - If you change/add symptoms or conditions in the admin or shell and want to update the fixture:
 
-It:
-- Does **not** provide medical diagnosis.
-- Does **not** replace a doctor or emergency service.
-- Should **never** be used for real medical decisions.
+    ```bash
+    python manage.py dumpdata symptoms.Symptom symptoms.Condition symptoms.ConditionSymptom --indent 2 > symptoms/fixtures/initial_data.json
+    ```
 
-Always consult a qualified healthcare professional for any health concerns.
+    Commit and push this file so new machines get the updated dataset.
+
+- **Models:**
+  - `Symptom` — basic symptom info.
+  - `Condition` — name, description, severity, advice, home_remedies, when_to_see_doctor.
+  - `ConditionSymptom` — many-to-many bridge with a `weight` field.
+
+- **Views & Templates:**
+  - `home` view + `home.html` — form to collect user input.
+  - `get_suggestions` view + `results.html` — calculation and results display.
+
+---
+
+## Limitations
+
+- Rule-based with a manually defined dataset; not a real clinical decision system.
+- No real-time medical database or AI/ML integration.
+- Not validated by healthcare professionals.
+- Not meant for emergency use or serious medical decisions.
+
+---
+
+## Future Enhancements (Ideas)
+
+- Add many more conditions and refine symptom weights.
+- User accounts and history of previous suggestions.
+- Export results as PDF.
+- More detailed risk scoring and visualization.
+- Optional integration with an authenticated medical API (for educational exploration only).
+
+---
+
+## Disclaimer
+
+This project is for **learning and demonstration purposes** only.
+
+- It does **not** provide medical diagnosis.
+- It does **not** replace a doctor or emergency services.
+- Always consult a qualified healthcare professional for any health concerns, especially in emergencies.
